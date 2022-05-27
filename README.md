@@ -2,6 +2,6 @@
   * 인프런 강의 수강 (업무활용)
   * https://www.inflearn.com/course/ORM-JPA-Basic
 
-## **프로젝트 환경설정**
+## **JPA 소개**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/SQL-중심적인-개발의-문제점.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/JPA-소개.md
