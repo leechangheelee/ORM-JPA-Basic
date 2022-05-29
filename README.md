@@ -5,3 +5,6 @@
 ## **JPA 소개**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/SQL-중심적인-개발의-문제점.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/JPA-소개.md
+
+## **JPA 시작하기**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/Hello-JPA-프로젝트-생성.md
