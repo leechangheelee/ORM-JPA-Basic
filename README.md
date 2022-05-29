@@ -9,3 +9,6 @@
 ## **JPA 시작하기**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/Hello-JPA-프로젝트-생성.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/Hello-JPA-애플리케이션-개발.md
+
+## **영속성 관리 - 내부 동작 방식**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/영속성-컨텍스트.md
