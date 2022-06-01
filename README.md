@@ -17,3 +17,4 @@
 
 ## **엔티티 매핑**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/객체와-테이블-매핑.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/데이터베이스-스키마-자동-생성.md
