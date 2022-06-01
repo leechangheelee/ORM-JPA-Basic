@@ -14,3 +14,6 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/영속성-컨텍스트.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/플러시.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/준영속-상태.md
+
+## **엔티티 매핑**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/객체와-테이블-매핑.md
