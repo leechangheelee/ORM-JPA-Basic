@@ -20,3 +20,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/데이터베이스-스키마-자동-생성.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/필드와-컬럼-매핑.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/기본-키-매핑.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/실전-예제-1-요구사항-분석과-기본-매핑.md
