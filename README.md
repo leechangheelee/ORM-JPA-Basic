@@ -25,3 +25,4 @@
 ## **연관관계 매핑 기초**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/단방향-연관관계.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/양방향-연관관계와-연관관계의-주인-1-기본.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/양방향-연관관계와-연관관계의-주인-2-주의점-및-정리.md
