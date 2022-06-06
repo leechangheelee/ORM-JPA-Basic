@@ -32,3 +32,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/다대일.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/일대다.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/일대일.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/다대다.md
