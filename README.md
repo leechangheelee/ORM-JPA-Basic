@@ -30,3 +30,4 @@
 
 ## **다양한 연관관계 매핑**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/다대일.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/일대다.md
