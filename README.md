@@ -33,3 +33,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/일대다.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/일대일.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/다대다.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/실전-예제-3-다양한-연관관계-매핑.md
