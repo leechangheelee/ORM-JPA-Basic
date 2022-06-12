@@ -38,3 +38,4 @@
 ## **고급 매핑**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/상속관계-매핑.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/Mapped-Superclass-매핑-정보-상속.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/실전-예제-4-상속관계-매핑.md
