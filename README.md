@@ -39,3 +39,6 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/상속관계-매핑.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/Mapped-Superclass-매핑-정보-상속.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/실전-예제-4-상속관계-매핑.md
+
+## **프록시와 연관관계 관리**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/프록시.md
