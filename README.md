@@ -42,3 +42,4 @@
 
 ## **프록시와 연관관계 관리**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/프록시.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/즉시-로딩과-지연-로딩.md
