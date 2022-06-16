@@ -18,3 +18,140 @@
   * 영속성 전이 + 고아 객체, 생명 주기
     
     ![image](https://user-images.githubusercontent.com/79301439/174032296-3aab8c9d-8f77-41fe-921a-15016ca23f92.png)
+    
+    ```java
+    package hellojpa;
+
+    import javax.persistence.*;
+    import java.util.ArrayList;
+    import java.util.List;
+
+    @Entity
+    public class Parent {
+
+        @Id @GeneratedValue
+        private Long id;
+
+        private String name;
+
+        @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true)
+        //@OneToMany(mappedBy = "parent", orphanRemoval = true)
+        //@OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+        private List<Child> childList = new ArrayList<>();
+
+        public void addChild(Child child) {
+            childList.add(child);
+            child.setParent(this);
+        }
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public List<Child> getChildList() {
+            return childList;
+        }
+
+    }
+    ```
+    
+    ```java
+    package hellojpa;
+
+    import javax.persistence.*;
+
+    @Entity
+    public class Child {
+
+        @Id @GeneratedValue
+        private Long id;
+
+        private String name;
+
+        @ManyToOne
+        @JoinColumn(name = "parent_id")
+        private Parent parent;
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public Parent getParent() {
+            return parent;
+        }
+
+        public void setParent(Parent parent) {
+            this.parent = parent;
+        }
+    }
+    ```
+    
+    ```java
+    package hellojpa;
+
+    import javax.persistence.*;
+
+    public class JpaMain {
+
+        public static void main(String[] args) {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
+
+            EntityManager em = emf.createEntityManager();
+
+            EntityTransaction tx = em.getTransaction();
+            tx.begin();
+
+            try {
+
+                Child child1 = new Child();
+                Child child2 = new Child();
+
+                Parent parent = new Parent();
+                parent.addChild(child1);
+                parent.addChild(child2);
+
+                em.persist(parent);
+
+                em.flush();
+                em.clear();
+
+                Parent findParent = em.find(Parent.class, parent.getId());
+                findParent.getChildList().remove(0);
+
+                tx.commit();
+            } catch(Exception e) {
+                tx.rollback();
+                e.printStackTrace();
+            } finally {
+                em.close();
+            }
+
+            emf.close();
+        }
+
+    }
+    ```
