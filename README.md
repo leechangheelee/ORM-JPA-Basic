@@ -48,3 +48,4 @@
 
 ## **값 타입**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/기본값-타입.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/임베디드-타입.md
