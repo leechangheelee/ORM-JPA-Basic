@@ -45,3 +45,6 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/즉시-로딩과-지연-로딩.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/영속성-전이(CASCADE)와-고아-객체.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/실전-예제-5-연관관계-관리.md
+
+## **값 타입**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/기본값-타입.md
