@@ -50,3 +50,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/기본값-타입.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/임베디드-타입.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/값-타입과-불변-객체.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/값-타입의-비교.md
