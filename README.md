@@ -53,3 +53,6 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/값-타입의-비교.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/값-타입-컬렉션.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/실전-예제-6-값-타입-매핑.md
+
+## **객체지향 쿼리 언어1 - 기본 문법**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/소개.md
