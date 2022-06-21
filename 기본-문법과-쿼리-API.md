@@ -23,4 +23,277 @@
     
     ![image](https://user-images.githubusercontent.com/79301439/174746950-5f08a791-82c2-4cf4-b8df-43606ac7e0bb.png)
     
+    ```java
+    package jpql;
+
+    import javax.persistence.Embeddable;
+
+    @Embeddable
+    public class Address {
+
+        private String city;
+        private String street;
+        private String zipcode;
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public String getStreet() {
+            return street;
+        }
+
+        public void setStreet(String street) {
+            this.street = street;
+        }
+
+        public String getZipcode() {
+            return zipcode;
+        }
+
+        public void setZipcode(String zipcode) {
+            this.zipcode = zipcode;
+        }
+    }
+    ```
     
+    ```java
+    package jpql;
+
+    import javax.persistence.*;
+
+    @Entity
+    public class Member {
+
+        @Id @GeneratedValue
+        private Long id;
+        private String username;
+        private int age;
+
+        @ManyToOne//(fetch = FetchType.LAZY)
+        @JoinColumn(name = "TEAM_ID")
+        private Team team;
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
+        public Team getTeam() {
+            return team;
+        }
+
+        public void setTeam(Team team) {
+            this.team = team;
+        }
+    }
+    ```
+    
+    ```java
+    package jpql;
+
+    import javax.persistence.*;
+
+    @Entity
+    @Table(name = "ORDERS")
+    public class Order {
+
+        @Id @GeneratedValue
+        private Long id;
+        private int orderAmount;
+
+        @Embedded
+        private Address address;
+
+        @ManyToOne
+        @JoinColumn(name = "PRODUCT_ID")
+        private Product product;
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public int getOrderAmount() {
+            return orderAmount;
+        }
+
+        public void setOrderAmount(int orderAmount) {
+            this.orderAmount = orderAmount;
+        }
+
+        public Address getAddress() {
+            return address;
+        }
+
+        public void setAddress(Address address) {
+            this.address = address;
+        }
+
+        public Product getProduct() {
+            return product;
+        }
+
+        public void setProduct(Product product) {
+            this.product = product;
+        }
+    }
+    ```
+    
+    ```java
+    package jpql;
+
+    import javax.persistence.Entity;
+    import javax.persistence.GeneratedValue;
+    import javax.persistence.Id;
+
+    @Entity
+    public class Product {
+
+        @Id @GeneratedValue
+        private Long id;
+        private String name;
+        private int price;
+        private int stockAmount;
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getPrice() {
+            return price;
+        }
+
+        public void setPrice(int price) {
+            this.price = price;
+        }
+
+        public int getStockAmount() {
+            return stockAmount;
+        }
+
+        public void setStockAmount(int stockAmount) {
+            this.stockAmount = stockAmount;
+        }
+    }
+    ```
+    
+    ```java
+    package jpql;
+
+    import javax.persistence.Entity;
+    import javax.persistence.GeneratedValue;
+    import javax.persistence.Id;
+    import javax.persistence.OneToMany;
+    import java.util.ArrayList;
+    import java.util.List;
+
+    @Entity
+    public class Team {
+
+        @Id @GeneratedValue
+        private Long id;
+
+        private String name;
+
+        @OneToMany(mappedBy = "team")
+        private List<Member> members = new ArrayList<>();
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+    }
+    ```
+    
+    ```java
+    package jpql;
+
+    import javax.persistence.*;
+
+    public class JpaMain {
+
+        public static void main(String[] args) {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
+
+            EntityManager em = emf.createEntityManager();
+
+            EntityTransaction tx = em.getTransaction();
+            tx.begin();
+
+            try {
+
+                Member member = new Member();
+                member.setUsername("member1");
+                member.setAge(10);
+                em.persist(member);
+
+                Member result = em.createQuery("select m from Member m where m.username = :username", Member.class)
+                        .setParameter("username", "member1")
+                        .getSingleResult();
+
+                System.out.println("result = " + result.getUsername());
+
+                tx.commit();
+            } catch(Exception e) {
+                tx.rollback();
+                e.printStackTrace();
+            } finally {
+                em.close();
+            }
+
+            emf.close();
+        }
+
+    }
+    ```
