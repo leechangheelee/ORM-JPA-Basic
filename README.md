@@ -57,3 +57,4 @@
 ## **객체지향 쿼리 언어1 - 기본 문법**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/객체지향-쿼리-언어-소개.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/기본-문법과-쿼리-API.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/프로젝션(SELECT).md
