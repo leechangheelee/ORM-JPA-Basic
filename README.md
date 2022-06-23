@@ -61,3 +61,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/페이징.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/조인.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/서브-쿼리.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/JPQL-타입-표현식과-기타식.md
