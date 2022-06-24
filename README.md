@@ -67,3 +67,4 @@
 
 ## **객체지향 쿼리 언어2 - 중급 문법**
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/경로-표현식.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/페치-조인-1-기본.md
