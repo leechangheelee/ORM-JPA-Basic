@@ -64,3 +64,6 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/JPQL-타입-표현식과-기타식.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/조건식.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/JPQL-함수.md
+
+## **객체지향 쿼리 언어2 - 중급 문법**
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/경로-표현식.md
