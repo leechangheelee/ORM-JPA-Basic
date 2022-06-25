@@ -69,3 +69,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/경로-표현식.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/페치-조인-1-기본.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/페치-조인-2-한계.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/다형성-쿼리.md
