@@ -72,3 +72,4 @@
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/다형성-쿼리.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/엔티티-직접-사용.md
   * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/Named-쿼리.md
+  * https://github.com/leechangheelee/ORM-JPA-Basic-Inflearn/blob/main/벌크-연산.md
